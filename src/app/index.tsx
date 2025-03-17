@@ -3,6 +3,7 @@ import "../styles/global.css";
 import { Header } from "../components/header";
 import Constants from "expo-constants";
 import { Steps } from "../components/steps";
+import { Informations } from "../components/informations";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -13,6 +14,7 @@ export default function Index() {
       <View className="w-full px-4 bg-white">
         <Header />
         <Steps />
+        <Informations />
       </View>
     </SafeAreaView>
   );

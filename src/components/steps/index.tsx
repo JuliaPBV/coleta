@@ -10,7 +10,7 @@ import { View, Pressable, Text } from "react-native";
 
 export function Steps() {
   return (
-    <View className="bg-#FFFFFF w-full flex flex-row items-center mt-8 m-2">
+    <View className="bg-#FFFFFF w-full flex flex-row items-center mt-8 m-2 mb-8">
       <View className="flex items-center">
         <View className="ml-5">
           <Plus size={10} color="#4a6fa1" />
