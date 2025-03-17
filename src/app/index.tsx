@@ -1,12 +1,17 @@
-import { Text, View } from "react-native";
+import { Text, View, ScrollView, StatusBar, SafeAreaView } from "react-native";
 import "../styles/global.css";
+import { Header } from "../components/header";
+import Constants from "expo-constants";
+
+const statusBarHeight = Constants.statusBarHeight;
 
 export default function Index() {
   return (
-    <View className="flex items-center justify-center">
-      <Text className="text-red-600">
-        Edit app/index.tsx to edit this screen.
-      </Text>
-    </View>
+    <SafeAreaView>
+      <StatusBar />
+      <View className="w-full px-4 bg-white">
+        <Header />
+      </View>
+    </SafeAreaView>
   );
 }
