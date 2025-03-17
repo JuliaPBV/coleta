@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { ActionButtons } from "../actionButtons";
 
 export function Informations() {
   return (
@@ -47,7 +48,7 @@ export function Informations() {
         </View>
       </View>
 
-      <View>
+      <View className="mb-6">
         <Text className="text-[#868E96] font-bold pb-1">
           Endereço da Coleta
         </Text>
@@ -56,6 +57,8 @@ export function Informations() {
           Complemento, CEP 987654-321
         </Text>
       </View>
+
+      <ActionButtons />
     </View>
   );
 }
