@@ -1,9 +1,14 @@
+import { useRouter } from "expo-router";
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 export function ActionButtons() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.blueButton}>
+      <TouchableOpacity
+        style={styles.blueButton}
+        onPress={() => router.push("/mapOptions")}
+      >
         <Text className="text-[#FFFFFF] font-bold">Iniciar Coleta</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.redButton}>
