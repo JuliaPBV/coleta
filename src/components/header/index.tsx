@@ -2,7 +2,7 @@ import { View, Pressable, Text } from "react-native";
 import { CaretLeft, X } from "phosphor-react-native";
 export function Header() {
   return (
-    <View className="bg-#FFFFFF w-full flex flex-row items-center justify-between">
+    <View className="bg-#FFFFFF w-full flex flex-row items-center justify-between pb-3 border-b border-[#F3F3F3]">
       <View className="flex flex-row items-center">
         <Pressable className="w-[35px] h-[35px] bg-white justify-center items-center">
           <CaretLeft size={20} color="#4a6fa1" />
