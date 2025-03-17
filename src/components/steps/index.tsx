@@ -1,4 +1,11 @@
-import { Package, Plus, MapPin, ArrowsLeftRight } from "phosphor-react-native";
+import {
+  Package,
+  Plus,
+  MapPin,
+  ArrowsLeftRight,
+  Cube,
+  Check,
+} from "phosphor-react-native";
 import { View, Pressable, Text } from "react-native";
 
 export function Steps() {
@@ -10,7 +17,7 @@ export function Steps() {
         </View>
         <Package size={30} color="#4a6fa1" />
         <View className="flex items-center">
-          <Text className="text-[#4a6fa1] font-bold pt-2 ">Coleta</Text>
+          <Text className="text-[#4a6fa1] font-bold pt-3 ">Coleta</Text>
         </View>
       </View>
 
@@ -20,7 +27,7 @@ export function Steps() {
         <View className="flex items-center mt-2">
           <MapPin size={30} color="#CED4DA" />
           <View className="flex items-center">
-            <Text className="text-[#CED4DA] font-bold pt-2 ">Check-in</Text>
+            <Text className="text-[#CED4DA] font-bold pt-4 ">Check-in</Text>
           </View>
         </View>
       </View>
@@ -31,14 +38,24 @@ export function Steps() {
         <View className="flex items-center mt-2">
           <ArrowsLeftRight size={30} color="#CED4DA" />
           <View className="flex items-center">
-            <Text className="text-[#CED4DA] font-bold pt-2 ">CrossDoking</Text>
+            <Text className="text-[#CED4DA] font-bold pt-4 ">CrossDoking</Text>
           </View>
         </View>
       </View>
 
       <View className="w-12 h-[2px] bg-[#E2E8F0] -m-1"></View>
+
+      <View className="flex items-center">
+        <View className="flex items-center mt-2">
+          <Cube size={30} color="#CED4DA" />
+          <View className="pl-5 -mt-1">
+            <Check size={10} color="#4a6fa1" />
+          </View>
+          <View className="flex items-center">
+            <Text className="text-[#CED4DA] font-bold pt-2 ">Entrega</Text>
+          </View>
+        </View>
+      </View>
     </View>
   );
 }
-
-//<Pressable className="w-[30px] h-[30px] bg-white justify-center items-center">
